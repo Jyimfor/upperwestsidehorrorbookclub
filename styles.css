@@ -5,13 +5,19 @@ body {
     padding: 0;
     background-color: #1c1c1c;
     color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
 }
 
 header {
     background: #111;
     color: #ff4444;
     padding: 1rem 0;
-    text-align: center;
+    width: 100%;
     border-bottom: 2px solid #ff4444;
 }
 
@@ -42,6 +48,7 @@ nav ul li a:hover {
 
 main {
     padding: 2rem;
+    flex-grow: 1;
 }
 
 section {
@@ -61,10 +68,8 @@ footer {
     color: #ff4444;
     text-align: center;
     padding: 1rem 0;
-    border-top: 2px solid #ff4444;
-    position: fixed;
     width: 100%;
-    bottom: 0;
+    border-top: 2px solid #ff4444;
 }
 
 form {
@@ -74,6 +79,7 @@ form {
     background: #333;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    text-align: left;
 }
 
 form label {
