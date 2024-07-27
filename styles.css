@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
 body {
     font-family: 'Times New Roman', serif;
     line-height: 1.6;
@@ -5,25 +7,22 @@ body {
     padding: 0;
     background-color: #1c1c1c;
     color: #f4f4f4;
-    height: 100vh;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 header {
     background: #111;
     color: #ff4444;
     padding: 1rem 0;
+    text-align: center;
     width: 100%;
     border-bottom: 2px solid #ff4444;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
+    flex-shrink: 0;
 }
 
-header h1 {
+header h1, header h2 {
     margin: 0;
     font-family: 'Creepster', cursive;
 }
@@ -32,10 +31,11 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 1rem;
 }
 
@@ -50,10 +50,9 @@ nav ul li a:hover {
 }
 
 main {
-    padding: 2rem;
-    flex-grow: 1;
+    flex: 1;
     overflow-y: auto;
-    margin-top: 100px; /* Adjust this value to fit your header height */
+    padding: 2rem;
 }
 
 section {
@@ -80,6 +79,7 @@ footer {
     padding: 1rem 0;
     width: 100%;
     border-top: 2px solid #ff4444;
+    flex-shrink: 0;
 }
 
 form {
@@ -89,7 +89,6 @@ form {
     background: #333;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    text-align: left;
 }
 
 form label {
@@ -121,5 +120,3 @@ form button {
 form button:hover {
     background: #ff6666;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
